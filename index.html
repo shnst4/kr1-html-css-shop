@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <!--Структура шапки: site-header — блок шапки;site-header__inner — внутренний контейнер шапки;site-header__logo — элемент логотипа;site-nav — самостоятельный блок навигации;site-nav__list — список внутри навигации;site-nav__item — пункт навигации;site-nav__link — ссылка навигации;site-nav__link--active — модификатор активной ссылки.-->
     <header>
       <div class="site-header">
-        <a class="site-logo" href="index.html">ShopProject</a>
+        <a class="site-header__logo" href="index.html">ShopProject</a>
 
-        <nav class="site-nav" aria-label="Основная навигация">
+        <nav class="site-nav">
           <ul class="site-nav__list">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -53,7 +53,7 @@
         <h2>Популярные товары</h2>
 
         <div class="products-grid">
-          <article class="product-card product-card--featured">
+          <article class="product-card">
             <h3 class="product-card__title">Товар 1</h3>
             <p class="product-card__description">
               Краткое описание учебного товара.
@@ -68,7 +68,7 @@
             </button>
           </article>
 
-          <article class="product-card product-card--featured">
+          <article class="product-card">
             <h3 class="product-card__title">Товар 2</h3>
             <p class="product-card__description">
               Краткое описание учебного товара.
@@ -83,7 +83,7 @@
             </button>
           </article>
 
-          <article class="product-card product-card--featured">
+          <article class="product-card">
             <h3 class="product-card__title">Товар 3</h3>
             <p class="product-card__description">
               Краткое описание учебного товара.
@@ -102,7 +102,7 @@
 
       <!--Блок для вспомогательной информации-->
       <aside class="aside-info">
-        <h2>Информация для студенток</h2>
+        <h2>Информация для студентов</h2>
         <p>
           На следующих практических занятиях этот проект будет расширяться:
           появятся формы, модальное окно, дополнительные страницы,

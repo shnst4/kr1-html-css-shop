@@ -1,0 +1,174 @@
+/* ===============================
+   1. Переменные проекта
+   =============================== */
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #e0dddd;
+  --color-muted: #666666;
+  --color-primary: #591717;
+  --color-primary-dark: #003f86;
+  --color-border: #dddddd;
+  --color-surface: #ead7c3;
+  --color-surface-accent: #591717;
+  --color-danger: #b00020;
+  --color-success: #168a2f;
+  --color-success-bg: #eefaf0;
+  --color-white: #ffffff;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --container-width: 1100px;
+}
+
+/* ===============================
+   2. Базовые стили
+   =============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+main {
+  flex: 1;
+}
+
+header,
+main,
+footer {
+  padding: var(--radius-lg);
+}
+
+header,
+footer {
+  background-color: var(--color-surface);
+}
+
+/* ===============================
+   3. Общие элементы интерфейса
+   =============================== */
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.site-header {
+  background-color: var(--color-surface);
+}
+
+.site-header__logo {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+.site-nav__list a {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: var(--space-sm) var(--space-md);
+  text-decoration: none;
+}
+
+.site-nav__list a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-radius: var(--radius-sm);
+}
+
+.section {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-xl);
+}
+
+.section h2 {
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+/* ===============================
+   4. Кнопки
+   =============================== */
+
+.button {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--space-sm);
+  border: #ffffff solid 2px;
+}
+
+.button:hover {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* ===============================
+   5. Утилиты
+   =============================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
+}
+
+.breadcrumbs {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-md);
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.breadcrumbs__link {
+  color: var(--color-primary);
+}
+
+.breadcrumbs__current::before {
+  content: " / ";
+  color: var(--color-muted);
+}
