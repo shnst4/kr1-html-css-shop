@@ -66,7 +66,11 @@
               Классические высокие кеды в синем цвете.
             </p>
             <p class="product-card__price">Цена: 8 990 руб.</p>
-            <button class="button product-card__button" type="button">
+            <button
+              class="button product-card__button"
+              type="button"
+              data-product="Item 1"
+            >
               Заказать
             </button>
           </article>
@@ -80,7 +84,11 @@
               Низкие кеды, универсальная модель на каждый день.
             </p>
             <p class="product-card__price">Цена: 7 490 руб.</p>
-            <button class="button product-card__button" type="button">
+            <button
+              class="button product-card__button"
+              type="button"
+              data-product="Item 2"
+            >
               Заказать
             </button>
           </article>
@@ -94,7 +102,11 @@
               Массивная подошва, современный дизайн.
             </p>
             <p class="product-card__price">Цена: 12 990 руб.</p>
-            <button class="button product-card__button" type="button">
+            <button
+              class="button product-card__button"
+              type="button"
+              data-product="Item 3"
+            >
               Заказать
             </button>
           </article>
@@ -131,6 +143,7 @@
         method="post"
         novalidate
       >
+        <input type="hidden" id="selected-product" name="product" />
         <div class="order-form__field">
           <label class="order-form__label" for="order-name">Имя</label>
           <input
@@ -155,13 +168,13 @@
 
         <div class="order-form__actions">
           <button
-            class="button button--secondary"
+            class="button button--modal"
             type="button"
             id="close-order-dialog"
           >
             Закрыть
           </button>
-          <button class="button button--primary" type="submit">
+          <button class="button button--modal" type="submit">
             Отправить заявку
           </button>
         </div>

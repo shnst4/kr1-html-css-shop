@@ -8,7 +8,7 @@
   --color-surface-accent: #203042; /*Блок hero*/
   --color-header: rgb(92, 136, 189);
   --color-danger: #b00020;
-  --color-success: #168a2f;
+  --color-success: #36cd59;
   --color-success-bg: #eefaf0;
   --color-white: #ffffff;
 
@@ -176,35 +176,21 @@ a:hover {
   background-color: var(--color-white);
 }
 
-.button--primary {
-  color: var(--color-white);
-  background-color: var(--color-primary);
-}
-
-.button--primary:hover {
-  background-color: var(--color-primary-dark);
-}
-
-.button--secondary {
+/* Кнопки для модального окна */
+.button--modal {
   color: var(--color-primary);
-  background-color: transparent;
-  border: 1px solid var(--color-primary);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary);
 }
-
-.button--secondary:hover {
+.button--modal:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .button:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
-}
-
-.button:disabled,
-.button--disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
 }
 
 /* Карточки товаров */
@@ -275,7 +261,6 @@ a:hover {
 }
 
 /* Модальное окно и форма */
-
 .order-dialog {
   width: min(100% - 32px, 560px);
   padding: var(--space-lg);
@@ -333,8 +318,18 @@ a:hover {
   max-width: var(--container-width);
   margin: var(--space-lg) auto;
   padding: var(--space-md);
-  border-left: 4px solid var(--color-success);
-  background-color: var(--color-success-bg);
+  background-color: var(--color-success);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  min-width: 320px;
 }
 
 /* Утилиты */
@@ -343,7 +338,9 @@ html {
   scroll-behavior: smooth;
 }
 
+/*Переход к блоку по кнопке*/
 :target {
-  outline: 2px dashed var(--color-primary);
-  outline-offset: 4px;
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px; /*Отступ от линии до края элемента*/
+  border-radius: var(--radius-md);
 }

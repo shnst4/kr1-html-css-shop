@@ -65,7 +65,9 @@ orderForm.addEventListener("submit", (event) => {
 
   // Показываем сообщение об успешной отправке.
   successMessage.hidden = false;
-
+  setTimeout(() => {
+    successMessage.hidden = true;
+  }, 3000);
   // Очищаем форму.
   orderForm.reset();
 
