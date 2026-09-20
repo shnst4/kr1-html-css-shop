@@ -1,19 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Каталог товаров учебного интернет-магазина."
-    />
-    <title>Каталог товаров - Учебный интернет-магазин</title>
-    <link rel="stylesheet" href="css/contacts.css" />
+    <meta name="description" content="Каталог кроссовок Converse Shop." />
+    <title>Каталог — Converse Shop</title>
+    <link rel="stylesheet" href="css/catalog.css" />
   </head>
   <body>
     <header>
       <div class="site-header">
-        <a class="site-header__logo" href="index.html">ShopProject</a>
+        <a class="site-header__logo" href="index.html">Converse Shop</a>
 
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
@@ -31,7 +28,7 @@
     <main>
       <nav class="breadcrumbs" aria-label="Хлебные крошки">
         <a href="index.html">Главная</a>
-        <span>Каталог</span>
+        <span class="breadcrumbs__current">Каталог</span>
       </nav>
 
       <section class="catalog-layout">
@@ -76,7 +73,7 @@
                 name="price-to"
                 type="number"
                 min="0"
-                placeholder="5000"
+                placeholder="50 000"
               />
             </fieldset>
 
@@ -88,48 +85,55 @@
           <h2>Список товаров</h2>
 
           <div class="products-grid">
-            <!-- Карточки товаров -->
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/item_1_no_bg.png" alt="Converse Chuck 70" />
+              </div>
+              <h3 class="product-card__title">Converse Chuck 70</h3>
+              <p class="product-card__description">
+                Классические высокие кеды в синем цвете.
+              </p>
+              <p class="product-card__price">Цена: 8 990 руб.</p>
+              <a class="button product-card__button" href="index.html#popular">
+                Подробнее
+              </a>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/item_2_no_bg.png" alt="Converse All Star Low" />
+              </div>
+              <h3 class="product-card__title">Converse All Star Low</h3>
+              <p class="product-card__description">
+                Низкие кеды, универсальная модель на каждый день.
+              </p>
+              <p class="product-card__price">Цена: 7 490 руб.</p>
+              <a class="button product-card__button" href="index.html#popular">
+                Подробнее
+              </a>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image">
+                <img src="img/item_3_no_bg.png" alt="Converse Run Star Hike" />
+              </div>
+              <h3 class="product-card__title">Converse Run Star Hike</h3>
+              <p class="product-card__description">
+                Массивная подошва, современный дизайн.
+              </p>
+              <p class="product-card__price">Цена: 12 990 руб.</p>
+              <a class="button product-card__button" href="index.html#popular">
+                Подробнее
+              </a>
+            </article>
           </div>
         </section>
-      </section>
-
-      <section class="section">
-        <h1>Каталог товаров</h1>
-        <p>
-          На этой странице представлен учебный каталог товаров. В дальнейшем
-          здесь будут добавлены фильтры, сортировка и более подробные карточки.
-        </p>
-      </section>
-
-      <section class="section">
-        <h2>Список товаров</h2>
-
-        <article class="product-card">
-          <h3>Товар 1</h3>
-          <p>Краткое описание учебного товара.</p>
-          <p>Цена: 1000 руб.</p>
-          <a class="button" href="index.html#popular">Подробнее</a>
-        </article>
-
-        <article class="product-card">
-          <h3>Товар 2</h3>
-          <p>Краткое описание учебного товара.</p>
-          <p>Цена: 1500 руб.</p>
-          <a class="button" href="index.html#popular">Подробнее</a>
-        </article>
-
-        <article class="product-card">
-          <h3>Товар 3</h3>
-          <p>Краткое описание учебного товара.</p>
-          <p>Цена: 2000 руб.</p>
-          <a class="button" href="index.html#popular">Подробнее</a>
-        </article>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+      <p>&copy; 2026 Converse Shop. Все права защищены.</p>
+      <p>Оригинальная обувь Converse с доставкой по России</p>
     </footer>
   </body>
 </html>
