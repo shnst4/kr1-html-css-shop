@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Converse Shop — магазин обуви</title>
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/main.js" defer></script>
   </head>
@@ -11,7 +11,7 @@
     <!--Структура шапки: site-header — блок шапки;site-header__inner — внутренний контейнер шапки;site-header__logo — элемент логотипа;site-nav — самостоятельный блок навигации;site-nav__list — список внутри навигации;site-nav__item — пункт навигации;site-nav__link — ссылка навигации;site-nav__link--active — модификатор активной ссылки.-->
     <header>
       <div class="site-header">
-        <a class="site-header__logo" href="index.html">ShopProject</a>
+        <a class="site-header__logo" href="index.html">Converse Shop</a>
 
         <nav class="site-nav">
           <ul class="site-nav__list">
@@ -28,24 +28,28 @@
 
     <main>
       <section class="hero">
-        <h1>Учебный интернет-магазин</h1>
+        <h1>Интернет-магазин лучшей обуви</h1>
         <p>
-          Это стартовая страница учебного frontend-проекта. В дальнейшем на её
-          основе будет разработан многостраничный сайт интернет-магазина или
-          каталога услуг.
+          Оригинальные кеды Converse Chuck Taylor, All Star и Run Star Hike.
+          Доставка по всей России, гарантия качества, размеры от 35 до 46.
         </p>
         <a class="button" href="#popular">Перейти к товарам</a>
       </section>
 
       <!--Блок преимуществ-->
-      <section class="section" id="advantages">
-        <h2>Преимущества проекта</h2>
-        <ul class="advantages-list">
-          <li>понятная HTML-структура;</li>
-          <li>семантические блоки страницы;</li>
-          <li>подключение внешнего CSS-файла;</li>
-          <li>подготовка к разработке многостраничного сайта.</li>
-        </ul>
+      <section class="section section--advantages" id="advantages">
+        <div class="advantages-content">
+          <h2>Преимущества магазина</h2>
+          <ul class="advantages-list">
+            <li>Только оригинальные модели Converse;</li>
+            <li>Более 100 цветов в наличии;</li>
+            <li>Доставка по России за 2–5 дней;</li>
+            <li>Обмен и возврат в течение 30 дней.</li>
+          </ul>
+        </div>
+        <div class="advantages-image">
+          <img src="img/blue_converse-no-bg.png" />
+        </div>
       </section>
 
       <!--Блок популярных товаров-->
@@ -54,46 +58,43 @@
 
         <div class="products-grid">
           <article class="product-card">
-            <h3 class="product-card__title">Товар 1</h3>
+            <div class="product-card__image">
+              <img src="img/item_1_no_bg.png" alt="Item 1" />
+            </div>
+            <h3 class="product-card__title">Converse Chuck 70</h3>
             <p class="product-card__description">
-              Краткое описание учебного товара.
+              Классические высокие кеды в синем цвете.
             </p>
-            <p class="product-card__price">Цена: 1000 руб.</p>
-            <button
-              class="button product-card__button"
-              type="button"
-              data-product="Товар 1"
-            >
+            <p class="product-card__price">Цена: 8 990 руб.</p>
+            <button class="button product-card__button" type="button">
               Заказать
             </button>
           </article>
 
           <article class="product-card">
-            <h3 class="product-card__title">Товар 2</h3>
+            <div class="product-card__image">
+              <img src="img/item_2_no_bg.png" alt="Item 2" />
+            </div>
+            <h3 class="product-card__title">Converse All Star Low</h3>
             <p class="product-card__description">
-              Краткое описание учебного товара.
+              Низкие кеды, универсальная модель на каждый день.
             </p>
-            <p class="product-card__price">Цена: 1500 руб.</p>
-            <button
-              class="button product-card__button"
-              type="button"
-              data-product="Товар 1"
-            >
+            <p class="product-card__price">Цена: 7 490 руб.</p>
+            <button class="button product-card__button" type="button">
               Заказать
             </button>
           </article>
 
           <article class="product-card">
-            <h3 class="product-card__title">Товар 3</h3>
+            <div class="product-card__image">
+              <img src="img/item_3_no_bg.png" alt="Item 3" />
+            </div>
+            <h3 class="product-card__title">Converse Run Star Hike</h3>
             <p class="product-card__description">
-              Краткое описание учебного товара.
+              Массивная подошва, современный дизайн.
             </p>
-            <p class="product-card__price">Цена: 2000 руб.</p>
-            <button
-              class="button product-card__button"
-              type="button"
-              data-product="Товар 1"
-            >
+            <p class="product-card__price">Цена: 12 990 руб.</p>
+            <button class="button product-card__button" type="button">
               Заказать
             </button>
           </article>
@@ -102,18 +103,17 @@
 
       <!--Блок для вспомогательной информации-->
       <aside class="aside-info">
-        <h2>Информация для студентов</h2>
+        <h2>Как заказать наши Converse</h2>
         <p>
-          На следующих практических занятиях этот проект будет расширяться:
-          появятся формы, модальное окно, дополнительные страницы,
-          Flex/Grid,БЭМ-структура и адаптивная версия сайта.
+          Выберите модель, нажмите «Заказать» и заполните форму. Мы свяжемся с
+          вами для подтверждения заказа и уточнения размера.
         </p>
       </aside>
     </main>
 
     <footer id="contacts">
-      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+      <p>&copy; 2026 Converse Shop. Все права защищены.</p>
+      <p>Оригинальная обувь Converse с доставкой по России</p>
     </footer>
 
     <!--Модальное окно с формой-->
