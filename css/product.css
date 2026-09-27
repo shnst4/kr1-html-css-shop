@@ -45,6 +45,11 @@ main {
   flex: 1;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 header,
 main,
 footer {
@@ -138,22 +143,9 @@ a:hover {
   background-color: var(--color-white);
   border-color: var(--color-primary);
 }
-
-/* Хлебные крошки */
-.breadcrumbs {
-  max-width: var(--container-width);
-  margin: 0 auto var(--space-md);
-  font-size: 14px;
-  color: var(--color-muted);
-}
-
-.breadcrumbs__link {
-  color: var(--color-primary);
-}
-
-.breadcrumbs__current::before {
-  content: " / ";
-  color: var(--color-muted);
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
 }
 
 /* Утилиты */
@@ -206,6 +198,7 @@ html {
   border-radius: var(--radius-sm);
   font-size: 14px;
   font-weight: 700;
+  z-index: 1;
 }
 
 .product-detail__info h1 {

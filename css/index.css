@@ -103,7 +103,7 @@ a:hover {
 
 .site-nav__list a:hover {
   background-color: var(--color-primary);
-  color: var(--color-surface);
+  color: var(--color-white);
   border-radius: var(--radius-sm);
 }
 
@@ -276,9 +276,7 @@ a:hover {
   margin-bottom: var(--space-xs);
 }
 
-.order-form__input,
-.order-form__select,
-.order-form__textarea {
+.order-form__input {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid var(--color-border);
@@ -338,4 +336,15 @@ html {
   outline: 2px solid var(--color-primary);
   outline-offset: 4px; /*Отступ от линии до края элемента*/
   border-radius: var(--radius-md);
+}
+
+/* Шапка для демонстрации position: stycky прилипает */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+html {
+  scroll-padding-top: 210px; /* При прокрутке к якорю оставляет место под шапку */
 }

@@ -42,7 +42,14 @@ body {
 }
 
 main {
-  flex: 1;
+  flex: 1; /* Для прижатия footer к низу */
+}
+
+/* Шапка прилиапает при прокрутке (просто для демонстрации position: sticky)*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header,
@@ -110,17 +117,6 @@ a:hover {
   margin: 0 auto var(--space-xl);
 }
 
-.section h2 {
-  margin-top: 0;
-  color: var(--color-primary);
-}
-/* Белая карточка для контента страницы */
-.section--card {
-  padding: var(--space-lg);
-  background-color: var(--color-white);
-  border-radius: var(--radius-lg);
-}
-
 /* Кнопки */
 .button {
   display: inline-block;
@@ -139,37 +135,7 @@ a:hover {
   border-color: var(--color-primary);
 }
 
-/* Хлебные крошки */
-.breadcrumbs {
-  max-width: var(--container-width);
-  margin: 0 auto var(--space-md);
-  font-size: 14px;
-  color: var(--color-muted);
-}
-
-.breadcrumbs__link {
-  color: var(--color-primary);
-}
-
-.breadcrumbs__current::before {
-  content: " / ";
-  color: var(--color-muted);
-}
-
-/* Утилиты */
-html {
-  scroll-behavior: smooth;
-}
-
-:target {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 4px;
-  border-radius: var(--radius-md);
-}
-
-/* ===============================
-   Белая карточка для формы
-   =============================== */
+/* Белая карточка для формы */
 
 .section--card {
   padding: var(--space-lg);
