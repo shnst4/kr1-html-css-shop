@@ -1,15 +1,12 @@
 :root {
-  --color-bg: #f0f7ff;
-  --color-text: rgb(32, 48, 66);
-  --color-muted: #666666;
-  --color-primary: rgb(32, 48, 66);
-  --color-primary-dark: #003f86;
+  --color-bg: #f0f7ff; /*Фон страницы*/
+  --color-text: #e0dddd; /*Основной текст*/
+  --color-primary: rgb(32, 48, 66); /*Для hover*/
   --color-border: #dddddd;
-  --color-surface-accent: #203042;
+  --color-surface-accent: #203042; /*Блок hero*/
   --color-header: rgb(92, 136, 189);
-  --color-danger: #b00020;
-  --color-success: #36cd59;
-  --color-success-bg: #eefaf0;
+  --color-danger: #b00020; /*Ошибка поля*/
+  --color-success: #36cd59; /*Уведомление успеха*/
   --color-white: #ffffff;
 
   --space-xs: 4px;
@@ -159,9 +156,7 @@ html {
   border-radius: var(--radius-md);
 }
 
-/* ===============================
-   Карточка товара
-   =============================== */
+/* Карточка товара */
 
 .product-detail {
   display: grid;
@@ -224,12 +219,10 @@ html {
   border-collapse: collapse;
   background-color: var(--color-white);
   border-radius: var(--radius-md);
-  overflow: hidden;
   box-shadow: 0 4px 16px rgba(32, 48, 66, 0.08);
 }
 
 .product-table caption {
-  caption-side: top;
   text-align: left;
   padding: var(--space-md);
   font-weight: 700;

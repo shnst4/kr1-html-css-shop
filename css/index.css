@@ -1,15 +1,12 @@
 :root {
-  --color-bg: #f0f7ff;
-  --color-text: #e0dddd;
-  --color-muted: #666666;
+  --color-bg: #f0f7ff; /*Фон страницы*/
+  --color-text: #e0dddd; /*Основной текст*/
   --color-primary: rgb(32, 48, 66); /*Для hover*/
-  --color-primary-dark: #003f86;
   --color-border: #dddddd;
   --color-surface-accent: #203042; /*Блок hero*/
   --color-header: rgb(92, 136, 189);
-  --color-danger: #b00020;
-  --color-success: #36cd59;
-  --color-success-bg: #eefaf0;
+  --color-danger: #b00020; /*Ошибка поля*/
+  --color-success: #36cd59; /*Уведомление успеха*/
   --color-white: #ffffff;
 
   --space-xs: 4px;
